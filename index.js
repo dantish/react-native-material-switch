@@ -202,9 +202,9 @@ var MaterialSwitch = createReactClass({
     var callHandlers = this.start.state != state;
     setTimeout(() => {
       this.setState({state : state});
-      if (callHandlers) {
+      // if (callHandlers) {
         this.callback();
-      }
+      // }
     }, this.props.switchAnimationTime/2);
   },
 
